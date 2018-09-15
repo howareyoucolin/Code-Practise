@@ -11,6 +11,7 @@ var selectSort = require('../sorting/selectSort');
 var mergeSort = require('../sorting/mergeSort');
 var quickSort = require('../sorting/quickSort');
 var heapSort = require('../sorting/heapSort');
+var binaryTreeSort = require('../sorting/binaryTreeSort');
 
 
 describe('Sortings', function() {
@@ -60,6 +61,7 @@ describe('Sortings', function() {
 	testSorting('Merge Sort',mergeSort);
 	testSorting('Quick Sort',quickSort);
 	testSorting('Heap Sort',heapSort);
+	testSorting('Binary Tree Sort',binaryTreeSort);
 	
 	
 });

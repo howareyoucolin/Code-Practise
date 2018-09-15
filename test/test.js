@@ -10,6 +10,7 @@ var insertionSort = require('../sorting/insertionSort');
 var selectSort = require('../sorting/selectSort');
 var mergeSort = require('../sorting/mergeSort');
 var quickSort = require('../sorting/quickSort');
+var heapSort = require('../sorting/heapSort');
 
 
 describe('Sortings', function() {
@@ -58,6 +59,7 @@ describe('Sortings', function() {
 	testSorting('Selection Sort',selectSort);
 	testSorting('Merge Sort',mergeSort);
 	testSorting('Quick Sort',quickSort);
+	testSorting('Heap Sort',heapSort);
 	
 	
 });

@@ -9,6 +9,7 @@ var bubbleSort = require('../sorting/bubbleSort');
 var insertionSort = require('../sorting/insertionSort');
 var selectSort = require('../sorting/selectSort');
 var mergeSort = require('../sorting/mergeSort');
+var quickSort = require('../sorting/quickSort');
 
 
 describe('Sortings', function() {
@@ -89,6 +90,23 @@ describe('Sortings', function() {
 		});
 		it('should sort empty array', function() {
 		  expect(mergeSort.sort(test_array_3)).to.deep.equal(result_array_3);
+		});
+	});
+	
+	
+	//Test quick sort
+	describe('Quick Sort', function() {
+		it('should sort ' + test_array.join(' '), function() {
+		  expect(quickSort.sort(test_array)).to.deep.equal(result_array);
+		});
+		it('should sort array contains duplicate items ' + test_array_1.join(' '), function() {
+		  expect(quickSort.sort(test_array_1)).to.deep.equal(result_array_1);
+		});
+		it('should sort array with only a single item', function() {
+		  expect(quickSort.sort(test_array_2)).to.deep.equal(result_array_2);
+		});
+		it('should sort empty array', function() {
+		  expect(quickSort.sort(test_array_3)).to.deep.equal(result_array_3);
 		});
 	});
 	

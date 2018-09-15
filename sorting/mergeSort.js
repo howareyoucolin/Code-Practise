@@ -68,6 +68,7 @@ var sort = function(inputArray){
 		
 	}
 	
+	
 	//Kick start mergeSort 
 	return mergeSort(arr);
 	

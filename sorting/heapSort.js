@@ -152,7 +152,7 @@ var sort = function(inputArray){
 	//Initally build a max heap from 'arr'
 	_max_heapify();
 
-	//Keep poping the root of the tree to the end of the array,
+	//Keep poping the root of the tree and append to the end of the array,
 	//then move the last leaf to the root and re-heapify the heap,
 	//Countinue the process til the heap is empty
 	while(max_length > 1){
@@ -170,8 +170,8 @@ var sort = function(inputArray){
 //Time: o(n*log(n))
 //Space: o(1)
 //Note: 
-// --> heap heap is kind of like a tree but normally implemented with an array.
-// --> heap heap is easy for insertion and deletion but slow to traversal.
+// --> heap is kind of like a tree but normally implemented with an array.
+// --> heap is easy for insertion and deletion but slow to traversal.
 // --> heap sort is not stable due to issues dealing with duplicate items.
 //Source:
 // --> https://www.programiz.com/dsa/heap-sort

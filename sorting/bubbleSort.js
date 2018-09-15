@@ -1,15 +1,23 @@
 //Bubble Sort
 
 
-var sort = function(arr){
+var sort = function(inputArray){
+	
+	//Clone array to avoid mutating the original
+	var arr = Object.assign([], inputArray);
 	
 	for(var i=0;i<arr.length-1;i++){
 		for(var k=0;k<arr.length-1-i;k++){
+			
 			if(arr[k] > arr[k+1]){
+				
+				//Swap
 				var t = arr[k];
 				arr[k] = arr[k+1];
 				arr[k+1] = t;
+				
 			}
+			
 		}
 	}
 	

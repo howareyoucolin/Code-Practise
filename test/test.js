@@ -6,6 +6,7 @@ var expect = chai.expect;
 
 //Import custom functions
 var bubbleSort = require('../sorting/bubbleSort');
+var insertionSort = require('../sorting/insertionSort');
 
 
 describe('Sortings', function() {
@@ -20,6 +21,14 @@ describe('Sortings', function() {
 	describe('Bubble Sort', function() {
 		it('should sort ' + test_array.join(' '), function() {
 		  expect(bubbleSort.sort(test_array)).to.deep.equal(result_array);
+		});
+	});
+	
+	
+	//Test insertion sort
+	describe('Insertion Sort', function() {
+		it('should sort ' + test_array.join(' '), function() {
+		  expect(insertionSort.sort(test_array)).to.deep.equal(result_array);
 		});
 	});
 	

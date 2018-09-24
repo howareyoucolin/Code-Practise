@@ -1,5 +1,10 @@
+//Design pattern state:
+//Every time the state changes, re-render the component.
+
+
 const health_bar = (function(){
 	
+	//State cannot be accessed directly by outside
 	let state = {};
 	
 	let renderHealthBar = function(){
@@ -25,6 +30,8 @@ const health_bar = (function(){
 		},
 		
 		setHp : function(hp){
+			//HP cannot exceed the max HP
+			if(hp > 100) hp = 100;
 			state.hp = hp;
 			renderHealthBar();
 		}
